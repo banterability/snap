@@ -2,8 +2,21 @@
 <html lang="en">
 <head>
   <title>Snap</title>
+  <style>
+    #dataList li, #averageList li{
+      display: inline-block;
+      font-size: 18px;
+      font-family: "Helvetica Neue";
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
+  <h3>Values</h3>
+  <ul id="dataList"></ul>
+  <h3>Rolling Averages</h3>
+  <ul id="averageList"></ul>
+
   <script src="public/js/vendor/underscore-min.js"></script>
   <script src="public/js/vendor/d3.v2.min.js"></script>
   <script src="public/js/app.js"></script>
